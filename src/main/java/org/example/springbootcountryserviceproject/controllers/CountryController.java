@@ -17,8 +17,8 @@ public class CountryController {
     CountryService countryService;
 
     @GetMapping("/getcountries")
-    public List<Country> getCountries(){
-        return countryService.getAllCountries();
+    public String getCountries(){
+        return "All Countries";
     }
 
     @GetMapping("/getcountries/{id}")
